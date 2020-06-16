@@ -1,0 +1,5 @@
+FROM docker/whalesay:lates
+
+RUN apt-get -y update && apgt-get install -y fortunes
+
+CMD /usr/games/fortune | cowsay
